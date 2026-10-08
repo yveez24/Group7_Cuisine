@@ -25,7 +25,7 @@ img {
 .welcome-screen {
     background:
         linear-gradient(rgba(24, 22, 15, 0.48), rgba(187, 173, 120, 0.7)),
-        url("images/Welcome/welcome.jpg") center center / cover no-repeat;
+        url("images/welcome/welcome.jpg") center center / cover no-repeat;
 }
 
 /* DECORATIVE BORDER */
@@ -107,7 +107,7 @@ img {
     justify-content: center;
     background:
         linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
-        url("images/Welcome/welcome2.jpg") center / cover no-repeat;
+        url("images/welcome/welcome2.jpg") center / cover no-repeat;
     color: #292929;
 }
 
@@ -180,11 +180,11 @@ img {
 }
 
 /* One photo per province with a dark layer on top */
-.iloilo   { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/Welcome/Iloilo.jpg") center / cover no-repeat; }
-.capiz    { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/Welcome/Capiz.jpg") center / cover no-repeat; }
-.guimaras { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/Welcome/Guimaras.jpg") center / cover no-repeat; }
-.aklan    { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/Welcome/Aklan.jpg") center / cover no-repeat; }
-.antique  { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/Welcome/Antique.jpg") center / cover no-repeat; }
+.iloilo   { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/welcome/Iloilo.jpg") center / cover no-repeat; }
+.capiz    { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/welcome/Capiz.jpg") center / cover no-repeat; }
+.guimaras { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/welcome/Guimaras.jpg") center / cover no-repeat; }
+.aklan    { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/welcome/Aklan.jpg") center / cover no-repeat; }
+.antique  { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/welcome/Antique.jpg") center / cover no-repeat; }
 
 .back-arrow-container {
     margin-top: 65px;
