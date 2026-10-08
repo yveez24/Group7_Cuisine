@@ -1,0 +1,238 @@
+/* GENERAL SETTINGS */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f0e5;
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* WELCOME PAGE */
+.screen {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 25px;
+}
+
+.welcome-screen {
+    background:
+        linear-gradient(rgba(24, 22, 15, 0.48), rgba(187, 173, 120, 0.7)),
+        url("images/Welcome/welcome.jpg") center center / cover no-repeat;
+}
+
+/* DECORATIVE BORDER */
+.screen::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    border: 1px solid #e7c780;
+    pointer-events: none;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.eyebrow {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #bfae88;
+    margin-bottom: 22px;
+}
+
+.main-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 88px;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    color: #393835;
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px;
+}
+
+.gold-line {
+    width: 100px;
+    height: 3px;
+    background-color: #d7b66e;
+    margin: 28px auto;
+}
+
+/* CIRCLE ARROW BUTTONS */
+.arrow-btn,
+.back-arrow {
+    width: 78px;
+    height: 78px;
+    border: 2px solid #e6c77f;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.04);
+    color: #ffffff;
+    font-size: 38px;
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+.arrow-btn:hover,
+.back-arrow:hover {
+    background-color: #d7b66e;
+    color: #302719;
+    transform: scale(1.1);
+}
+
+/* PROVINCE PAGE */
+.province-screen {
+    display: none;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding: 50px 25px;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
+        url("images/Welcome/welcome2.jpg") center / cover no-repeat;
+    color: #292929;
+}
+
+.province-screen::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 1px solid #999999;
+    pointer-events: none;
+}
+
+.province-content {
+    width: 100%;
+    max-width: 1050px;
+    position: relative;
+    text-align: center;
+}
+
+.province-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 75px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.province-tagline {
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px;
+    color: #544d4d;
+}
+
+.choose-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.province-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+.province-item {
+    text-align: center;
+}
+
+.province-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 8px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.province-circle:hover {
+    border-color: #d7b66e;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* One photo per province with a dark layer on top */
+.iloilo   { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/Welcome/Iloilo.jpg") center / cover no-repeat; }
+.capiz    { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/Welcome/Capiz.jpg") center / cover no-repeat; }
+.guimaras { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/Welcome/Guimaras.jpg") center / cover no-repeat; }
+.aklan    { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/Welcome/Aklan.jpg") center / cover no-repeat; }
+.antique  { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/Welcome/Antique.jpg") center / cover no-repeat; }
+
+.back-arrow-container {
+    margin-top: 65px;
+    text-align: center;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+    .main-title {
+        font-size: 56px;
+    }
+
+    .province-title {
+        font-size: 48px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .main-title {
+        font-size: 40px;
+    }
+
+    .tagline {
+        font-size: 18px;
+    }
+
+    .province-screen {
+        padding: 65px 25px;
+    }
+
+    .province-title {
+        font-size: 28px;
+    }
+
+    .province-tagline,
+    .choose-title {
+        font-size: 20px;
+    }
+
+    .province-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px 10px;
+    }
+
+    .province-circle {
+        width: 75px;
+        height: 75px;
+    }
+}

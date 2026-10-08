@@ -1,0 +1,327 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif; 
+}
+
+body { 
+    background: white; 
+    padding: 12px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 14px; 
+    font-family: Arial, sans-serif; 
+}
+
+.P1 { 
+    border: 1.5px solid black; 
+    border-radius: 8px; 
+    padding: 10px 5px; 
+}
+
+.P2 { 
+    border: 1.5px solid black; 
+    border-radius: 8px; 
+    padding: 20px 15px; 
+}
+
+.P3 { 
+    border: 1.5px solid black; 
+    border-radius: 8px; 
+    padding: 20px 15px; 
+}
+
+.P4 { 
+    border: 1.5px solid black; 
+    border-radius: 8px; 
+    padding: 20px 15px; 
+}
+
+.P5 { 
+    border: 1.5px solid black; 
+    border-radius: 8px; 
+    padding: 20px 15px; 
+}
+
+.PH1 { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 8px; 
+    flex-wrap: wrap; 
+    gap: 8px; 
+}
+
+.PH1 h1 { 
+    font-size: 15px; 
+}
+
+.PH2 { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 8px; 
+    flex-wrap: wrap; 
+    gap: 8px; 
+}
+
+.PH2 h2 { 
+    font-size: 16px; 
+}
+
+.PH3 { 
+    border: 1.5px solid black; 
+    border-radius: 8px; 
+    padding: 20px 15px; 
+}
+
+.PH3 { 
+    font-size: 15px; 
+}
+
+.NB { 
+    background: yellow; 
+    border: 1.5px solid #333; 
+    border-radius: 8px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 18px; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+.logo { 
+    background-image: url(GG/2.png); 
+    background-size: cover; 
+    background-position: center; 
+    padding: 23px; 
+    font-size: 12px; 
+    color: #777; 
+    border-radius: 4px; 
+    min-width: 46px; 
+    min-height: 46px; 
+}
+
+.NB ul { 
+    list-style: none; 
+    display: flex; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.NB a { 
+    background: none; 
+    text-decoration: none; 
+    font-size: 15px; 
+}
+
+.NB a.active { 
+    font-size: medium; 
+    color: #1e3a8a; 
+    font-weight: bold; 
+    border-bottom: 2px solid #1e3a8a; 
+}
+
+.BB { 
+    padding: 20px 15px; 
+    border-radius: 4px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden; 
+}
+
+.TB { 
+    border-radius: 4px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 20px; 
+    overflow: hidden; 
+}
+
+.province-photo-box { 
+    border-radius: 4px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 12px; 
+    overflow: hidden; 
+}
+
+.dish-card img { 
+    border-radius: 4px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 12px; 
+    overflow: hidden; 
+}
+
+.footer-box { 
+    border-radius: 4px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 12px; 
+    overflow: hidden; 
+}
+
+.BB { 
+    min-height: 250px; 
+    height: 50vh; 
+    max-height: 500px; 
+    flex-direction: column; 
+    gap: 0; 
+    padding: 17px; 
+    text-align: center; 
+}
+
+.BB p { 
+    font-size: clamp(18px, 4vw, 32px); 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+.BB img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+}
+
+.province-photo-box img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+}
+
+.DDC img { 
+    width: 100%; 
+    height: 180px; 
+    object-fit: cover; 
+    object-position: center; 
+    display: block; 
+    border-radius: 0px; 
+    margin: 0px; 
+    background: #fff; 
+}
+
+.province-photo-box { 
+    width: 100%; 
+    height: 220px; 
+}
+
+.about-content { 
+    display: grid; 
+    grid-template-columns: 1fr 2fr; 
+    gap: 18px; 
+}
+
+.DD { display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+}
+
+.DDC { 
+    display: flex; 
+    flex-direction: column; 
+    height: auto; 
+    min-height: 380px; 
+    border: 1.5px solid #ccc; 
+    border-radius: 6px; 
+    padding: 0px; 
+    background: white; 
+    overflow: hidden; 
+}
+
+.DDC img { 
+    flex-shrink: 0; 
+}
+
+.line { 
+    font-size: 13px; 
+    line-height: 1.5; 
+    padding: 0px 6px; 
+    margin-bottom: 4px; 
+}
+
+.title-line.small { 
+    font-weight: bold; 
+    font-size: 14px; 
+    padding: 6px 6px 0px 6px; 
+}
+
+.line.scroll { 
+    flex: 1; 
+    max-height: 160px; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    background: #fafafa; 
+    border: 1px solid #eee; 
+    border-radius: 0px 0px 4px 4px; 
+    padding: 6px; 
+    font-size: 13px; 
+    line-height: 1.5; 
+    margin: 4px; 
+}
+
+.line.scroll::-webkit-scrollbar { width: 6px; }
+.line.scroll::-webkit-scrollbar-thumb { 
+    background: #ffb300; 
+    border-radius: 4px; 
+}
+
+.FG { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 12px; 
+    margin-top: 6px; 
+}
+
+.FB { 
+    height: auto; 
+    min-height: 26px; 
+    padding: 8px; 
+    background: white; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+@media (max-width: 768px) { 
+    body { padding: 8px; }
+     .NB { 
+        flex-direction: column; 
+        align-items: flex-start; }
+
+        .NB ul { 
+            width: 100%; 
+            justify-content: space-between; 
+            gap: 8px; 
+            background: #f9f9f9; 
+            padding: 8px; 
+            border-radius: 6px; }
+
+            .NB a { 
+                font-size: 13px; }
+
+                .BB { 
+                    height: 35vh; 
+                    min-height: 180px; }
+
+                    .about-content, .DD, .FG { 
+                        grid-template-columns: 1fr; }
+
+                        .province-photo-box { 
+                            height: 200px; } 
+}
+@media (max-width: 480px) { 
+    .DD { 
+        grid-template-columns: 1fr; } 
+
+        .NB ul { 
+            gap: 5px; 
+        }
+}
