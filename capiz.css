@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     color: #222;
-    background-image: url("capiz-background.jpg");
+    background-image: url("/images/capiz/capiz-background.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

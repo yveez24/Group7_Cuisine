@@ -138,14 +138,6 @@ img {
     padding-bottom: 60px;
 }
 
-.section-label {
-    color: #bd9458;
-    font-size: 11px;
-    letter-spacing: 3px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
 .section-title {
     font-family: 'Playfair Display', serif;
     color: #38291e;
@@ -156,7 +148,7 @@ img {
 .section-description {
     line-height: 1.9;
     color: #81786d;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .section-intro {
@@ -165,27 +157,9 @@ img {
 
 .about-image {
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
-    border-radius: 16px;
-}
-
-.fact-box {
-    background: #f8f5ed;
-    padding: 20px;
-    border-radius: 12px;
-    height: 100%;
-}
-
-.fact-box h6 {
-    color: #60452f;
-    font-weight: 700;
-}
-
-.fact-box p {
-    font-size: 13px;
-    color: #81786d;
-    margin: 0;
+    border-radius: 15px;
 }
 
 /* FOOD CARDS */
@@ -202,6 +176,34 @@ img {
     transform: translateY(-7px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
+
+.carousel-inner {
+    padding: 10px 0;
+}
+
+#dishCarousel {
+    padding: 0 60px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    opacity: 1;
+}
+
+.dish-arrow {
+    font-size: 60px;
+    color: #bd9458;
+    line-height: 1;
+    transition: color 0.3s;
+}
+
+.carousel-control-prev:hover .dish-arrow,
+.carousel-control-next:hover .dish-arrow {
+    color: #60452f;
+}
+
+
 
 .food-image {
     width: 100%;
@@ -225,17 +227,6 @@ img {
     color: #81786d;
     line-height: 1.7;
     margin-bottom: 0;
-}
-
-.food-tag {
-    display: inline-block;
-    background: #f4ead7;
-    color: #85623a;
-    padding: 6px 11px;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: 700;
-    margin-bottom: 12px;
 }
 
 /* 4th card */
@@ -366,6 +357,19 @@ img {
 
     .food-image {
         height: 190px;
+    }
+
+        #dishCarousel {
+        padding: 0 35px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 35px;
+    }
+
+    .dish-arrow {
+        font-size: 44px;
     }
 
     .tip-card {
