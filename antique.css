@@ -9,7 +9,6 @@ body {
     max-width: 2200px;
 }
 
-/* FLEXIBLE MEDIA */
 img {
     max-width: 100%;
     height: auto;
@@ -146,7 +145,7 @@ img {
 .section-description {
     line-height: 1.9;
     color: #81786d;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .section-intro {
