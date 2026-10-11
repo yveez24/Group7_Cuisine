@@ -6,12 +6,63 @@
 }
 
 body { 
-    background: white; 
+    background: yellow; 
     padding: 12px; 
     display: flex; 
     flex-direction: column; 
     gap: 14px; 
     font-family: Arial, sans-serif; 
+}
+
+.NB { 
+    border: 1.5px solid #333; 
+    border-radius: 8px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 15px; 
+    flex-wrap: wrap; 
+    gap: 25px; 
+}
+
+.logo { 
+    background-image: url("images/guimaras/guimaras-logo.png"); 
+    background-size: cover;
+    padding: 50px; 
+    min-width: 60px; 
+    min-height: 60px; 
+}
+
+.NB ul {
+    background: yellow; 
+    padding: 8px 16px; 
+    border-radius: 6px; 
+    transition: 0.3s; 
+    cursor: pointer;
+    list-style: none; 
+    display: flex; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.NB ul :hover {
+    border-color: black; 
+    box-shadow: 0 0 8px black; 
+    transform: scale(1.1);
+}
+
+.NB a {
+    background: yellowgreen; 
+    padding: 10px 8px; 
+    border-radius: 6px; 
+    transition: 0.3s; 
+    cursor: pointer;  
+    font-size: 15px;
+    color: black;
+}
+
+.NB ul li a {
+    text-decoration: none;
 }
 
 .P1 { 
@@ -54,7 +105,7 @@ body {
 }
 
 .PH1 h1 { 
-    font-size: 15px; 
+    font-size: 18px; 
 }
 
 .PH2 { 
@@ -67,7 +118,7 @@ body {
 }
 
 .PH2 h2 { 
-    font-size: 16px; 
+    font-size: 18px; 
 }
 
 .PH3 { 
@@ -76,52 +127,50 @@ body {
     padding: 20px 15px; 
 }
 
-.PH3 { 
-    font-size: 15px; 
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 12px;
+  align-items: start;
 }
 
-.NB { 
-    background: yellow; 
-    border: 1.5px solid #333; 
-    border-radius: 8px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    padding: 10px 18px; 
-    flex-wrap: wrap; 
-    gap: 10px; 
+.province-photo-box {
+  width: 100%;
+  height: 220px;
+  position: sticky;
+  top: 0;
 }
 
-.logo { 
-    background-image: url(GG/2.png); 
-    background-size: cover; 
-    background-position: center; 
-    padding: 23px; 
-    font-size: 12px; 
-    color: #777; 
-    border-radius: 4px; 
-    min-width: 46px; 
-    min-height: 46px; 
+.about-text-scroll {
+  height: 220px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: yellowgreen;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
 }
 
-.NB ul { 
-    list-style: none; 
-    display: flex; 
-    gap: 20px; 
-    flex-wrap: wrap; 
+.about-text-scroll b {
+    font-size: 20px;
+    font: bold;
 }
 
-.NB a { 
-    background: none; 
-    text-decoration: none; 
-    font-size: 15px; 
+.about-text-scroll::-webkit-scrollbar {
+  width: 6px;
 }
-
-.NB a.active { 
-    font-size: medium; 
-    color: #1e3a8a; 
-    font-weight: bold; 
-    border-bottom: 2px solid #1e3a8a; 
+.about-text-scroll::-webkit-scrollbar-track {
+  background: yellowgreen;
+  border-radius: 10px;
+}
+.about-text-scroll::-webkit-scrollbar-thumb {
+  background: yellow;
+  border-radius: 10px;
+}
+.about-text-scroll::-webkit-scrollbar-thumb:hover {
+  background: yellow;
 }
 
 .BB { 
@@ -138,7 +187,7 @@ body {
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    font-size: 20px; 
+    font-size: 16px; 
     overflow: hidden; 
 }
 
@@ -229,11 +278,10 @@ body {
     display: flex; 
     flex-direction: column; 
     height: auto; 
-    min-height: 380px; 
-    border: 1.5px solid #ccc; 
+    min-height: 380px;  
     border-radius: 6px; 
     padding: 0px; 
-    background: white; 
+    background: yellowgreen; 
     overflow: hidden; 
 }
 
@@ -241,7 +289,8 @@ body {
     flex-shrink: 0; 
 }
 
-.line { 
+.line {
+    background: yellowgreen;
     font-size: 13px; 
     line-height: 1.5; 
     padding: 0px 6px; 
@@ -254,53 +303,127 @@ body {
     padding: 6px 6px 0px 6px; 
 }
 
+.title-line.xsmall { 
+    font-size: 14px; 
+    padding: 6px 6px 0px 6px; 
+}
+
 .line.scroll { 
     flex: 1; 
     max-height: 160px; 
     overflow-y: auto; 
     overflow-x: hidden; 
-    background: #fafafa; 
-    border: 1px solid #eee; 
+    background: yellowgreen; 
     border-radius: 0px 0px 4px 4px; 
     padding: 6px; 
-    font-size: 13px; 
+    font-size: 14px; 
     line-height: 1.5; 
     margin: 4px; 
 }
 
 .line.scroll::-webkit-scrollbar { width: 6px; }
 .line.scroll::-webkit-scrollbar-thumb { 
-    background: #ffb300; 
+    background: yellow; 
     border-radius: 4px; 
+}
+
+.PT {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
 }
 
 .FG { 
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 12px; 
-    margin-top: 6px; 
+    display: flex; 
+    justify-content: space-around; 
+    gap: 20px; 
+    flex-wrap: wrap;
 }
 
 .FB { 
-    height: auto; 
-    min-height: 26px; 
-    padding: 8px; 
-    background: white; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
+    text-align: center;
+}
+
+.footer-btn {
+  margin-top: 10px;
+  padding: 8px 18px;
+  border: 2px solid black;
+  background: transparent;
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.footer-btn:hover { 
+  background: #00ff88; 
+  color: #111; 
+  box-shadow: 0 0 15px #00ff88;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.75);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.modal-box {
+  background: #1a1a1a;
+  color: white;
+  padding: 30px;
+  border-radius: 16px;
+  border: 2px solid #00ff88;
+  max-width: 450px;
+  width: 85%;
+  position: relative;
+  animation: pop 0.3s ease;
+}
+.close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+}
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.modal-link:hover {
+    background: #023e8a;
+}
+
+.source-link {
+    color: #0077b6;
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) { 
     body { padding: 8px; }
      .NB { 
         flex-direction: column; 
-        align-items: flex-start; }
+        align-items: center; }
 
         .NB ul { 
             width: 100%; 
             justify-content: space-between; 
-            gap: 8px; 
-            background: #f9f9f9; 
+            gap: 3px; 
+            background: yellow; 
             padding: 8px; 
             border-radius: 6px; }
 
@@ -317,7 +440,7 @@ body {
                         .province-photo-box { 
                             height: 200px; } 
 }
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
     .DD { 
         grid-template-columns: 1fr; } 
 

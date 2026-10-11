@@ -1,245 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aklan Cuisine - Top 5</title>
+    <meta name="description" content="Discover Aklan's traditional cuisine, local dishes, and food culture in Western Visayas.">
+
+    <title>Aklan | Western Visayas Food Guide</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="aklan.css">
 </head>
 
 <body>
 
-<header>
-    <h1>🍴 Aklan Cuisine</h1>
-    <p>Discover the Traditional Flavors of Aklan</p>
+    <main class="page">
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="iloilo.html">Iloilo</a>
-        <a href="capiz.html">Capiz</a>
-        <a href="guimaras.html">Guimaras</a>
-        <a href="aklan.html">Aklan</a>
-        <a href="antique.html">Antique</a>
-    </nav>
-</header>
+        <!-- Navigation -->
+        <div class="site-nav">
+            <a href="index.html" class="logo">
+                <img src="images/aklan/aklan-logo.jpg" alt="Logo of Aklan">
+            </a>
 
-<section id="home" class="hero">
-    <div>
-        <h2>Top 5 Aklan Cuisine</h2>
-        <p>
-            Aklan cuisine reflects the rich culture and traditions of Aklan.
-            From savory native chicken dishes to sweet rice delicacies,
-            these foods showcase the unique flavors of the province.
-        </p>
-    </div>
-</section>
+            <div class="nav-links">
+                <a href="index.html">Welcome</a>
+                <a href="iloilo.html">Iloilo</a>
+                <a href="capiz.html">Capiz</a>
+                <a href="guimaras.html">Guimaras</a>
+                <a href="aklan.html" class="active">Aklan</a>
+                <a href="antique.html">Antique</a>
+            </div>
+        </div>
 
+        <!-- Banner -->
+        <div class="hero">
+            <img src="images/aklan/ati atihan.jpg" alt="Ati-Atihan Festival in Aklan">
 
-<!-- INUBARANG MANOK -->
-<section id="inubarang" class="food">
-    <img src="images/inubarang-manok.jpg" alt="Inubarang Manok">
+            <div class="hero-content">
+                <p>WESTERN VISAYAS FOOD GUIDE</p>
+                <h1>Welcome to Aklan</h1>
+                <span>Coconut, coast, and festival flavors</span>
+            </div>
+        </div>
 
-    <div class="food-content">
-        <h2>🍗 Inubarang Manok</h2>
+        <!-- About -->
+        <div class="section about" id="about">
+            <div class="section-title">
+                <p>DISCOVER AKLAN</p>
+                <h2>About Aklan</h2>
+            </div>
 
-        <p>
-            Inubarang Manok is a traditional Aklanon dish made with native
-            chicken and ubad, or banana pith. It is cooked with coconut milk,
-            lemongrass, garlic, ginger, and other spices.
-        </p>
+            <div class="row g-4 align-items-center">
 
-        <h3>Ingredients</h3>
-        <ul>
-            <li>1 whole native chicken, cut into pieces</li>
-            <li>2 cups ubad (banana pith)</li>
-            <li>2 cups coconut milk</li>
-            <li>2 stalks lemongrass</li>
-            <li>4 cloves garlic</li>
-            <li>1 onion</li>
-            <li>1 thumb-sized ginger</li>
-            <li>Salt and pepper</li>
-            <li>2 tablespoons cooking oil</li>
-        </ul>
+                <div class="col-12 col-md-7">
+                    <div class="about-text">
+                        <p>
+                            Aklan is a province in Western Visayas, home to Kalibo, the lively Ati-Atihan Festival, and the white sands of Boracay.
+                        </p>
 
-        <h3>How to Cook</h3>
-        <ol>
-            <li>Heat oil in a large pot.</li>
-            <li>Sauté garlic, onion, and ginger.</li>
-            <li>Add the native chicken and cook until lightly browned.</li>
-            <li>Add the ubad and lemongrass.</li>
-            <li>Pour in the coconut milk.</li>
-            <li>Season with salt and pepper.</li>
-            <li>Cover and simmer until the chicken is tender.</li>
-            <li>Serve hot with steamed rice.</li>
-        </ol>
-    </div>
-</section>
+                        <p>
+                            Its kitchens draw on what the land and sea provide: native chicken, young coconut, banana trunk, and fresh catch from the coast. Dishes like inubarang manok are slow, comforting meals, while kinilaw and grilled oysters keep things bright and simple.
+                        </p>
 
+                        <div class="about-highlight">
+                            <strong>Known for:</strong>
+                            <span>Ati-Atihan Festival and Boracay</span>
+                        </div>
+                    </div>
+                </div>
 
-<!-- BINAKOL -->
-<section id="binakol" class="food reverse">
-    <img src="images/chicken-binakol.jpg" alt="Chicken Binakol">
+                <div class="col-12 col-md-5">
+                    <div class="province-photo">
+                        <img src="images/aklan/aklan beach.jpg" alt="Beach scenery in Aklan">
+                    </div>
+                </div>
 
-    <div class="food-content">
-        <h2>🥥 Chicken Binakol / Binakoe</h2>
+            </div>
+        </div>
 
-        <p>
-            Chicken Binakol is a traditional dish made from native chicken,
-            young coconut water, coconut meat, ginger, and lemongrass.
-            It has a naturally sweet and refreshing flavor.
-        </p>
+        <!-- Signature Dishes -->
+        <div class="section dishes" id="dishes">
+            <div class="section-title">
+                <p>TASTE OF AKLAN</p>
+                <h2>Signature Dishes</h2>
+                <span>Scroll sideways to explore the local favorites.</span>
+            </div>
 
-        <h3>Ingredients</h3>
-        <ul>
-            <li>1 whole native chicken</li>
-            <li>2 cups young coconut water</li>
-            <li>1 cup young coconut meat</li>
-            <li>1 thumb-sized ginger</li>
-            <li>2 stalks lemongrass</li>
-            <li>1 onion</li>
-            <li>4 cloves garlic</li>
-            <li>Salt and pepper</li>
-            <li>2 tablespoons cooking oil</li>
-        </ul>
+            <div class="dish-slider">
 
-        <h3>How to Cook</h3>
-        <ol>
-            <li>Heat oil and sauté garlic, onion, and ginger.</li>
-            <li>Add the chicken and cook until slightly brown.</li>
-            <li>Pour in the young coconut water.</li>
-            <li>Add the lemongrass and young coconut meat.</li>
-            <li>Season with salt and pepper.</li>
-            <li>Cover and simmer until the chicken becomes tender.</li>
-            <li>Adjust the seasoning.</li>
-            <li>Serve hot with rice.</li>
-        </ol>
-    </div>
-</section>
+                <!-- Inubarang Manok -->
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="images/aklan/inubarang manok.jpg" alt="Inubarang Manok">
+                    </div>
 
+                    <div class="dish-content">
+                        <h3>Inubarang Manok</h3>
+                        <p class="dish-summary">A traditional-style chicken dish featuring ubad, or the tender inner core of a banana trunk, cooked with coconut milk and aromatics.</p>
 
-<!-- LINAPAY -->
-<section id="linapay" class="food">
-    <img src="images/linapay.jpg" alt="Linapay Tinamuk">
+                        <button class="btn desc-btn" type="button" onclick="toggleInfo(this)">▼ Description</button>
+                        <div class="dish-info">
+                            <p>
+                                Inubarang Manok is a comforting dish associated with parts of Western Visayas. It combines chicken with finely sliced ubad, ginger, garlic, onion, and sometimes coconut milk. The banana core adds a mild flavor and tender texture to the stew.
+                            </p>
+                        </div>
 
-    <div class="food-content">
-        <h2>🦐 Linapay / Tinamuk</h2>
+                        <button class="btn desc-btn" type="button" onclick="toggleInfo(this)">▼ Recipe</button>
+                        <div class="dish-info">
+                            <h4>Ingredients</h4>
+                            <ul>
+                                <li>500 g chicken, cut into serving pieces</li>
+                                <li>2 cups thinly sliced ubad</li>
+                                <li>1 cup coconut milk</li>
+                                <li>1 onion, chopped</li>
+                                <li>4 cloves garlic, minced</li>
+                                <li>1 thumb-sized ginger, sliced</li>
+                                <li>1 stalk lemongrass, bruised</li>
+                                <li>2 cups water or chicken broth</li>
+                                <li>Salt and pepper to taste</li>
+                                <li>1 tablespoon cooking oil</li>
+                            </ul>
 
-        <p>
-            Linapay, also known as Tinamuk, is a traditional Aklanon dish
-            made from pounded freshwater shrimp and young coconut meat.
-            The mixture is wrapped in taro leaves and cooked in coconut milk.
-        </p>
+                            <h4>Instructions</h4>
+                            <ol>
+                                <li>Heat oil in a pot. Sauté garlic, onion, and ginger until fragrant.</li>
+                                <li>Add the chicken and cook until lightly browned.</li>
+                                <li>Pour in water or broth, add lemongrass, and simmer until the chicken is nearly tender.</li>
+                                <li>Add the sliced ubad and continue cooking until tender.</li>
+                                <li>Pour in the coconut milk and simmer gently until the chicken is fully cooked.</li>
+                                <li>Season with salt and pepper. Serve hot with rice.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
 
-        <h3>Ingredients</h3>
-        <ul>
-            <li>500g freshwater shrimp</li>
-            <li>1 cup young coconut meat</li>
-            <li>10 taro leaves</li>
-            <li>2 cups coconut milk</li>
-            <li>3 cloves garlic</li>
-            <li>1 onion</li>
-            <li>1 thumb-sized ginger</li>
-            <li>Salt and pepper</li>
-        </ul>
+                <!-- Kinilaw na Isda -->
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="images/aklan/kinilaw na isda.jpg" alt="Kinilaw na Isda">
+                    </div>
 
-        <h3>How to Cook</h3>
-        <ol>
-            <li>Clean and pound the freshwater shrimp.</li>
-            <li>Mix the shrimp with young coconut meat.</li>
-            <li>Add garlic, onion, ginger, salt, and pepper.</li>
-            <li>Place a portion of the mixture on a taro leaf.</li>
-            <li>Wrap the mixture securely with the leaf.</li>
-            <li>Arrange the wrapped mixture in a cooking pot.</li>
-            <li>Pour coconut milk over the wrapped portions.</li>
-            <li>Simmer until fully cooked.</li>
-            <li>Serve warm.</li>
-        </ol>
-    </div>
-</section>
+                    <div class="dish-content">
+                        <h3>Kinilaw na Isda</h3>
+                        <p class="dish-summary">Fresh fish prepared with coconut vinegar, calamansi, ginger, red onions, and chili peppers.</p>
 
+                        <button class="btn desc-btn" type="button" onclick="toggleInfo(this)">▼ Description</button>
+                        <div class="dish-info">
+                            <p>
+                                Kinilaw na Isda is a Filipino preparation of fish dressed in an acidic mixture, often using vinegar and calamansi. Aromatics such as ginger, onion, and chili add flavor. It is usually served chilled as an appetizer or a refreshing seafood dish.
+                            </p>
+                        </div>
 
-<!-- INDAY-INDAY -->
-<section id="inday" class="food reverse">
-    <img src="images/inday-inday.jpg" alt="Inday-Inday">
+                        <button class="btn desc-btn" type="button" onclick="toggleInfo(this)">▼ Recipe</button>
+                        <div class="dish-info">
+                            <h4>Ingredients</h4>
+                            <ul>
+                                <li>300 g very fresh fish suitable for raw consumption</li>
+                                <li>1/2 cup coconut vinegar</li>
+                                <li>2 tablespoons calamansi juice</li>
+                                <li>1 small red onion, thinly sliced</li>
+                                <li>1 thumb-sized ginger, finely sliced</li>
+                                <li>1–2 chili peppers, sliced</li>
+                                <li>Salt and pepper to taste</li>
+                            </ul>
 
-    <div class="food-content">
-        <h2>🍚 Inday-Inday</h2>
+                            <h4>Instructions</h4>
+                            <ol>
+                                <li>Keep the fish refrigerated while preparing the other ingredients.</li>
+                                <li>Cut the fish into small, even cubes using clean utensils.</li>
+                                <li>Place the fish in a clean bowl and add the vinegar and calamansi juice.</li>
+                                <li>Add onion, ginger, and chili. Season lightly with salt and pepper.</li>
+                                <li>Cover and refrigerate briefly before serving cold.</li>
+                            </ol>
 
-        <p>
-            Inday-Inday is a sweet Aklanon delicacy made from sticky rice
-            flour. It is commonly served with sweetened coconut or bukayo.
-        </p>
+                            <p class="recipe-warning">
+                                Food safety: Acidic marinade does not reliably kill parasites or harmful bacteria. Use fish specifically handled for raw consumption; cooking the fish thoroughly is the safer option.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-        <h3>Ingredients</h3>
-        <ul>
-            <li>2 cups glutinous rice flour</li>
-            <li>1 cup water</li>
-            <li>1 cup grated coconut</li>
-            <li>1 cup brown sugar</li>
-            <li>½ cup water</li>
-            <li>Banana leaves</li>
-        </ul>
+                <!-- Inihaw na Talaba -->
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="images/aklan/inihaw na talaba.jpg" alt="Inihaw na Talaba">
+                    </div>
 
-        <h3>How to Cook</h3>
-        <ol>
-            <li>Mix glutinous rice flour with water to form a soft dough.</li>
-            <li>Shape the dough into small pieces.</li>
-            <li>Boil water in a pot.</li>
-            <li>Cook the rice dough pieces until they float.</li>
-            <li>Remove and drain them.</li>
-            <li>Cook brown sugar with water to make a sweet syrup.</li>
-            <li>Add grated coconut to the syrup.</li>
-            <li>Serve the Inday-Inday with the sweet coconut topping.</li>
-        </ol>
-    </div>
-</section>
+                    <div class="dish-content">
+                        <h3>Inihaw na Talaba</h3>
+                        <p class="dish-summary">Fresh oysters grilled in their shells and served with spicy vinegar and calamansi dip.</p>
 
+                        <button class="btn desc-btn" type="button" onclick="toggleInfo(this)">▼ Description</button>
+                        <div class="dish-info">
+                            <p>
+                                Inihaw na Talaba is a simple seafood dish made by grilling oysters until thoroughly cooked. The natural briny flavor pairs well with a dipping sauce made from vinegar, calamansi, garlic, onion, and chili. It is a popular way to enjoy coastal seafood.
+                            </p>
+                        </div>
 
-<!-- LATIK -->
-<section id="latik" class="food">
-    <img src="images/latik.jpg" alt="Aklan Latik">
+                        <button class="btn desc-btn" type="button" onclick="toggleInfo(this)">▼ Recipe</button>
+                        <div class="dish-info">
+                            <h4>Ingredients</h4>
+                            <ul>
+                                <li>1 kg fresh oysters in their shells</li>
+                                <li>1/4 cup vinegar</li>
+                                <li>2 tablespoons calamansi juice</li>
+                                <li>2 cloves garlic, minced</li>
+                                <li>1 small onion, chopped</li>
+                                <li>1 chili pepper, sliced</li>
+                                <li>Salt to taste</li>
+                            </ul>
 
-    <div class="food-content">
-        <h2>🍰 Latik</h2>
+                            <h4>Instructions</h4>
+                            <ol>
+                                <li>Scrub the oyster shells under clean running water.</li>
+                                <li>Prepare a clean grill over medium-high heat.</li>
+                                <li>Arrange the oysters on the grill and cook until the shells open and the meat is thoroughly cooked.</li>
+                                <li>Discard oysters that do not open during cooking.</li>
+                                <li>Mix vinegar, calamansi, garlic, onion, chili, and a little salt for the dipping sauce.</li>
+                                <li>Serve the cooked oysters hot with the dipping sauce.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
 
-        <p>
-            Latik is a traditional Aklan rice delicacy made with glutinous
-            rice, coconut, and sugar. It is a popular sweet treat and can
-            be wrapped in banana leaves.
-        </p>
+                <!-- Inihaw na Tuna -->
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="images/aklan/inihaw na panga ng tuna.jpg" alt="Inihaw na Tuna">
+                    </div>
 
-        <h3>Ingredients</h3>
-        <ul>
-            <li>2 cups glutinous rice</li>
-            <li>1 cup coconut milk</li>
-            <li>1 cup brown sugar</li>
-            <li>1 cup grated coconut</li>
-            <li>½ cup water</li>
-            <li>Banana leaves</li>
-        </ul>
+                    <div class="dish-content">
+                        <h3>Inihaw na Tuna</h3>
+                        <p class="dish-summary">Fresh tuna grilled until cooked through and served with a calamansi and soy sauce dip.</p>
 
-        <h3>How to Cook</h3>
-        <ol>
-            <li>Wash the glutinous rice.</li>
-            <li>Cook the rice with coconut milk.</li>
-            <li>Stir until the rice becomes soft and sticky.</li>
-            <li>In another pan, combine brown sugar and water.</li>
-            <li>Cook until the sugar becomes a thick syrup.</li>
-            <li>Add grated coconut and mix well.</li>
-            <li>Combine the sweet coconut mixture with the sticky rice.</li>
-            <li>Wrap portions in banana leaves.</li>
-            <li>Let them cool before serving.</li>
-        </ol>
-    </div>
-</section>
+                        <button class="btn desc-btn" type="button" onclick="toggleInfo(this)">▼ Description</button>
+                        <div class="dish-info">
+                            <p>
+                                Inihaw na Tuna is a simple coastal dish of tuna steaks grilled over hot coals. The fish is lightly seasoned so its natural flavor stands out, then served with a sharp dip of calamansi and soy sauce. Fresh grilled seafood like this is a favorite around Boracay and Aklan's coast.
+                            </p>
+                        </div>
 
+                        <button class="btn desc-btn" type="button" onclick="toggleInfo(this)">▼ Recipe</button>
+                        <div class="dish-info">
+                            <h4>Ingredients</h4>
+                            <ul>
+                                <li>500 g fresh tuna steaks, about 2 cm thick</li>
+                                <li>3 cloves garlic, minced</li>
+                                <li>1 tablespoon calamansi juice</li>
+                                <li>1 tablespoon cooking oil</li>
+                                <li>Salt and pepper to taste</li>
+                                <li>Dip: 3 tablespoons soy sauce, 2 tablespoons calamansi juice, 1 chili pepper, sliced</li>
+                            </ul>
 
-<footer>
-    <h3>Aklan Cuisine</h3>
-    
-    <p>Preserving the Taste and Heritage of Aklan</p>
-    <p>© 2026 Aklan Cuisine Website</p>
-</footer>
+                            <h4>Instructions</h4>
+                            <ol>
+                                <li>Pat the tuna dry. Rub with garlic, calamansi juice, oil, salt, and pepper.</li>
+                                <li>Let it rest for 10 minutes.</li>
+                                <li>Heat a clean grill to medium-high and lightly oil the grate.</li>
+                                <li>Grill the tuna for 3 to 4 minutes per side until cooked through.</li>
+                                <li>Mix the soy sauce, calamansi juice, and chili for the dip.</li>
+                                <li>Serve the tuna hot with the dip and steamed rice.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Baye-baye -->
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="images/aklan/baye-baye.jpg" alt="Baye-baye">
+                    </div>
+
+                    <div class="dish-content">
+                        <h3>Baye-baye</h3>
+                        <p class="dish-summary">A sweet Visayan rice delicacy made from toasted glutinous rice, coconut, and sugar.</p>
+
+                        <button class="btn desc-btn" type="button" onclick="toggleInfo(this)">▼ Description</button>
+                        <div class="dish-info">
+                            <p>
+                                Baye-baye is a traditional Visayan kakanin, or native sweet, made with glutinous rice and coconut. The rice is toasted for a nutty aroma, then cooked with coconut milk and sugar until thick and chewy. It is a snack that goes well with coffee or tea.
+                            </p>
+                        </div>
+
+                        <button class="btn desc-btn" type="button" onclick="toggleInfo(this)">▼ Recipe</button>
+                        <div class="dish-info">
+                            <h4>Ingredients</h4>
+                            <ul>
+                                <li>1 cup glutinous rice (malagkit)</li>
+                                <li>1 cup young coconut (buko) meat, shredded</li>
+                                <li>1 1/2 cups coconut milk</li>
+                                <li>1/2 cup brown sugar</li>
+                                <li>A pinch of salt</li>
+                                <li>Banana leaves or a greased tray</li>
+                            </ul>
+
+                            <h4>Instructions</h4>
+                            <ol>
+                                <li>Toast the rice in a dry pan over low heat until golden and fragrant. Let it cool.</li>
+                                <li>Grind the toasted rice into a coarse powder.</li>
+                                <li>In a pot, heat the coconut milk with the sugar and salt until the sugar dissolves.</li>
+                                <li>Stir in the ground rice and buko. Cook on low heat, stirring often, until very thick.</li>
+                                <li>Spread the mixture on a tray lined with banana leaves and let it cool.</li>
+                                <li>Cut into squares and serve.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Local Tip -->
+        <div class="tip">
+            <div class="tip-text">
+                <p>LOCAL TIP</p>
+                <h2>Don't miss Aklan's coconut and seafood!</h2>
+            </div>
+            <span>Try fresh grilled oysters and tuna when visiting Kalibo and Boracay.</span>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-title">
+                <p>AKLAN | WESTERN VISAYAS FOOD GUIDE</p>
+                <h2>Special Thanks To</h2>
+            </div>
+
+            <div class="row g-3">
+
+                <div class="col-12 col-md-4">
+                    <div class="footer-box">
+                        <h3>Author</h3>
+                        <p>Ciao Galleardo</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="footer-box">
+                        <h3>Sources List</h3>
+                        <p>
+                            Wikipedia: Aklan<br>
+                            Kusina Secrets: Kinilaw Na Isda
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="footer-box">
+                        <h3>Photo Credits</h3>
+                        <p>
+                            Aklan Seal: Wikimedia Commons<br>
+                            Photos: Local image files
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="copyright">&copy; 2026 Aklan Food Guide | Image credits to local photographers & Pinterest.</p>
+            <p class="disclaimer"></p>Disclaimer: This website is for educational purposes only. Recipes and information are provided for learning and exploration.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        function toggleInfo(button) {
+            let info = button.nextElementSibling;
+
+            info.classList.toggle("show");
+
+            if (info.classList.contains("show")) {
+                button.innerHTML = button.innerHTML.replace("▼", "▲");
+            } else {
+                button.innerHTML = button.innerHTML.replace("▲", "▼");
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
